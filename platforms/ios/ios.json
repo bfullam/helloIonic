@@ -1,0 +1,34 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "config.xml": {
+                "parents": {
+                    "/*": []
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-hello-world": {
+            "PACKAGE_NAME": "com.ionicframework.starter"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "file": "plugins/cordova-plugin-hello-world/www/HelloWorld.js",
+            "id": "cordova-plugin-hello-world.HelloWorld",
+            "pluginId": "cordova-plugin-hello-world",
+            "clobbers": [
+                "cordova.plugins.HelloWorld"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-hello-world": "0.0.1"
+    }
+}
